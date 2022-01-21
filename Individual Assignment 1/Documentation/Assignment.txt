@@ -1,0 +1,15 @@
+ndividual Assignment 1
+Overview
+For this individual assignment, you will be asked to read Ken Thompson's technical report on Unix implementation (see the attached file below) and answer the questions listed below. You are allowed to refer not only to this report, but also additional sources (the OS Concepts book, other papers and books, etc.), if you wish, when motivating your replies. 
+
+Tasks
+Please provide (and motivate) answers for the following questions (all questions refer to the Unix version discussed in Thompson's report):
+
+1.Which programming languages were used to implement the Unix kernel? Why?
+2. Is the Unix kernel a complete operating system? How would you compare these concepts?
+3. If you decided to re-implement the Unix kernel using the modern programming languages and tools, which language(s) would you select and why?
+4. Are new running processes (programs) started from scratch in Unix? What is their relationship to the already running processes?
+5. What are main classes of input-output devices supported by Unix? To which class would a Solid-State Drive (SSD) belong? How about a Brain-Computer Interface (BCI)?
+6. Does the Unix file system design use disks C: and D: (as in DOS or Windows)? Can a Unix system have several disk drives attached at the same time?
+7. What is an i-node? What are its contents and their purpose? Are i-nodes used for implementation of directories (if yes, how)?
+8. What are the primitive file system operations supported in Unix?
