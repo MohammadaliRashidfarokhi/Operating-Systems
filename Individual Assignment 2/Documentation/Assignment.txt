@@ -1,0 +1,32 @@
+Task 1: Comparison of FreeBSD ULE and Linux CFS Schedulers
+Please provide (and motivate) answers for the following questions (mainly based on the article by Bouron et al.):
+
+1. Does ULE support threads, or does it support processes only? How about CFS?
+2. How does CFS select the next task to be executed?
+3. What is a cgroup and how is it used by CFS? Does ULE support cgroups?
+4. How many queues in total does ULE use? What is the purpose of each queue? 
+5. How does ULE compute priority for various tasks?
+6. Do CFS and ULE support task preemption? Are there any limitations?
+7. Did Bouron et al. discover large differences in per-core scheduling performance between CFS and ULE? Which definition of "performance" did they use in their benchmark, and why?
+8. What is the difference between the multi-core load balancing strategies used by CFS and ULE? Is any of them faster? Does any of them typically reach perfect load balancing?
+
+Task 2: Developing a Scheduling Algorithm in Java
+In this task, you are going to develop a simple program in Java that implements a random scheduling algorithm, simulates the execution of processes, and reports the results. See the provided RandomScheduler.java file attached below.
+
+Your specific tasks for this part of the assignment include the following:
+
+1.Implement a program in Java that satisfies functional requirements listed below (also see the additional requirements for your code below this list):
+
+     . The scheduling algorithm must start at time moment (tick) 0 and work in a loop (with a step of 1 tick) until all of the processes are completed.
+     .The total number of processes is limited to a specific number. The processes do not arrive at predetermined time moments, however — instead, at each time moment one or several new processes may arrive with a given probability. Maximum number of new       .processes arriving at a given time moment is also limited with a separate parameter, though.
+     .The total burst time for each new process is determined randomly (using a uniform distribution) between the given minimum and maximum burst time.
+     .The next process to be assigned to the CPU is selected by the scheduling algorithm randomly (using a uniform distribution) among the currently available (and yet not completed) processes. 
+     .The scheduling algorithm should support two behaviors: non-preemptive and preemptive (using the provided time quantum value).
+     .The data about the total waiting time for each process should be stored.
+     .After each simulation is complete, the information about each process (ID, burst time, arrival time, and total waiting time) should be printed. Additionally, the complete execution time of the simulation and the average process waiting time should be printed.
+     .The implementation should run several simulations, with both non-preemptive and preemptive versions of the scheduling algorithm. See RandomScheduler.java for further details.
+2. Run the implementation and capture the results in your report (several screenshots + text output for all simulation results).
+3.Discuss the results in your report, including the following points:
+     . Do the simulation results for the non-preemptive and preemptive versions of the scheduling algorithm differ with any observable patterns?
+     . Would the observable behaviour for non-preemptive vs preemptive versions be different, if the RNG seed was different? What if the number of simulations was increased to, e.g., 10000? 
+     . What are the advantages and disadvantages of such a random scheduling algorithm compared to the First Come First Served (FCFS) algorithm?
