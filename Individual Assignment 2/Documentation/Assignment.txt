@@ -1,4 +1,4 @@
-Task 1: Comparison of FreeBSD ULE and Linux CFS Schedulers
+# Task 1: Comparison of FreeBSD ULE and Linux CFS Schedulers
 Please provide (and motivate) answers for the following questions (mainly based on the article by Bouron et al.):
 
 1. Does ULE support threads, or does it support processes only? How about CFS?
@@ -25,8 +25,8 @@ Your specific tasks for this part of the assignment include the following:
      .The data about the total waiting time for each process should be stored.
      .After each simulation is complete, the information about each process (ID, burst time, arrival time, and total waiting time) should be printed. Additionally, the complete execution time of the simulation and the average process waiting time should be printed.
      .The implementation should run several simulations, with both non-preemptive and preemptive versions of the scheduling algorithm. See RandomScheduler.java for further details.
-2. Run the implementation and capture the results in your report (several screenshots + text output for all simulation results).
-3.Discuss the results in your report, including the following points:
+# 2. Run the implementation and capture the results in your report (several screenshots + text output for all simulation results).
+# 3.Discuss the results in your report, including the following points:
      . Do the simulation results for the non-preemptive and preemptive versions of the scheduling algorithm differ with any observable patterns?
      . Would the observable behaviour for non-preemptive vs preemptive versions be different, if the RNG seed was different? What if the number of simulations was increased to, e.g., 10000? 
      . What are the advantages and disadvantages of such a random scheduling algorithm compared to the First Come First Served (FCFS) algorithm?
