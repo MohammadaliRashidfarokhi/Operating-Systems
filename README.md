@@ -13,3 +13,5 @@ For this individual assignment, I have been asked to read the paper on BTRFS (th
 # Group Assignment 1: 
 In this assignment, I have familiarize myself with the FreeBSD operating system, configure my working environment, and implemented a simple Java program interacting with the system shell.
 
+# Group Assignment 2:
+In this assignment, I have continued working with the FreeBSD operating system, implemented several Java programs related to the topics of inter-process communication and file system access, and studied their behavior within the OS.
